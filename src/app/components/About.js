@@ -75,7 +75,7 @@ export default function About() {
                                             <FontAwesomeIcon icon={faClipboardCheck} className='text-green-500'/> <span className='text-xs'>Advanced</span>
                                         </li>
                                         <li className='xl:mb-2'> Python/Java/C# <br/>                                                                               
-                                            <FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span>
+                                            <FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Beginner</span>
                                         </li>                                    
                                     </ul>
                                     </div>
@@ -85,7 +85,7 @@ export default function About() {
                                             <FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span>
                                         </li >                                     
                                         <li className='mb-2'>SQLPlus/PL/SQL  <br/>
-                                            <FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span>
+                                            <FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Intermediate</span>
                                         </li>                                                                                        
                                     </ul>
                                     </div>
@@ -99,13 +99,13 @@ export default function About() {
                                     <div className='flex w-max'>
                                     <ul className='flex flex-col p-2 px-5'>
                                         <li className='mb-2'>React.js <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
-                                        <li className='mb-2'>Node.js <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
+                                        <li className='mb-2'>Node.js <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Intermediate</span></li>
                                     </ul>
                                     </div>
                                     <div className='flex w-max'>
                                     <ul className='flex flex-col p-2 px-5'>
                                         <li className='mb-2'>React Native <br/><FontAwesomeIcon icon={faClipboardCheck} className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
-                                        <li className='mb-2'>Express.js <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
+                                        <li className='mb-2'>Express.js <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Intermediate</span></li>
                                     </ul>
                                     </div>
                                 </div>
@@ -114,20 +114,20 @@ export default function About() {
                         <div className='xl:flex items-center justify-center w-full'>
                       
                             {/* Databases */}
-                            <div className='xl:flex flex-col xl:w-1/3 md:m-6 m-2 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
+                            <div className='xl:flex flex-col xl:w-72 md:m-6 m-2 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
                                 <h1 className='font-bold bg-white text-center text-black text-xl  rounded'>Databases</h1>
                                 <div className='flex w-full items-center justify-between mt-2'>
-                                    <div className='flex'>
-                                    <ul className='flex flex-col p-2 px-5 '>
-                                        <li className='mb-2'>MySQL  <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
-                                        <li className='mb-2'>Oracle  <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
-                                    </ul>
+                                    <div className='flex w-max'>
+                                        <ul className='flex flex-col p-2 px-5'>
+                                            <li className='mb-2'>MySQL  <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500 '/> <span className='text-xs'>Intermediate</span></li>
+                                            <li className='mb-2'>Oracle  <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Intermediate</span></li>
+                                        </ul>
                                     </div>
-                                    <div className='flex'>
-                                    <ul className='flex flex-col p-2 px-5'>
-                                        <li className='mb-2'>MongoDB  <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
-                                        <li className='mb-2'>Firebase  <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
-                                    </ul>
+                                    <div className='flex w-max'>
+                                        <ul className='flex flex-col p-2 px-5'>
+                                            <li className='mb-2'>MongoDB  <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Intermediate</span></li>
+                                            <li className='mb-2'>Firebase  <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -136,13 +136,13 @@ export default function About() {
                             <div className='xl:flex flex-col xl:w-1/2 md:m-6 m-2 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
                                 <h1 className='font-bold bg-white text-center text-black text-xl  rounded'>Tools</h1>
                                 <div className='flex w-full items-center justify-between mt-2'>
-                                    <div className='flex'>
+                                    <div className='flex w-max'>
                                     <ul className='flex flex-col p-2 px-5'>
                                         <li className='mb-2'>Git <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span> </li>
                                         <li className='mb-2'>GitHub <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
                                     </ul>
                                     </div>
-                                    <div className='flex'>
+                                    <div className='flex w-max'>
                                     <ul className='flex flex-col p-2 px-5'>
                                         <li className='mb-2 '>Visual Studio Code <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
                                         <li className='mb-2'>Eclipse <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>

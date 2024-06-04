@@ -85,7 +85,7 @@ export default function Project() {
         <h1 className='flex italic justify-center font-extrabold xl:text-6xl md:text-4xl sm:text-2xl pb-8'>Course Projects</h1>
 
         {/* Projects */}
-        <div className='xl:flex flex-wra text-center items-center justify-between rounded-xl border-2 border-black overflow-auto'>
+        <div className='xl:flex text-center p-4 items-center justify-between rounded-xl bg-white border-2 border-black overflow-auto'>
 
           {/* Capstone */}
           <div className='flex justify-center m-2 '>
