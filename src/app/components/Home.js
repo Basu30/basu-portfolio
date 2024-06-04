@@ -37,7 +37,7 @@ const Home = () => {
 
         {/* Intro */}      
         <div className='w-full xl:pt-32 xl:pr-20'>
-          <h2 className='md:text-[3rem] font-bold'>Hey, I am Basu <br/><span className="justify-center xl:text-[2rem] text-center">Software Developer | Full Stack Developer</span></h2>
+          <h2 className='md:text-[3rem] font-bold'>Hey, I am Basu<br/><span className="justify-center xl:text-[2rem] text-center">Software Developer | Full Stack Developer</span></h2>
           <p className='rounded italic xl:text-xl md:pt-4 w-full text-x'>
             I am a Full Stack Developer, passionate and dedicated to my work. 
             With a solid foundation in IT support and a deep-seated enthusiasm for technology and coding, 
