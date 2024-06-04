@@ -55,9 +55,7 @@ export default function About() {
                         </div>
                         
                     </div>
-                    
-            
-            
+                              
                     {/* Skills */}
                     <div className="xl:flex flex-col xl:mx-8 border-4 rounded-xl shadow-custom-main">         
                         <h1 className='font-bold sm:text-xl italic pt-6'>Skills:</h1>
@@ -66,7 +64,7 @@ export default function About() {
                           <div className='xl:flex items-center justify-center md:m-2'>
 
                             {/* Programming Languages */}
-                            <div className='xl:flex flex-col md:m-6 m-2 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
+                            <div className='xl:flex flex-col md:m-6 m-10 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
                                 <h1 className='font-bold bg-white text-center text-black md:text-xl rounded'>Languages</h1>
                                 <div className='flex w-full items-center justify-between mt-2'>
                                     <div className='md:flex w-max'>
@@ -93,7 +91,7 @@ export default function About() {
                             </div>
 
                             {/* Frameworks */}
-                            <div className='xl:flex flex-col md:m-6 m-2 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>                        
+                            <div className='xl:flex flex-col md:m-6 m-10 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>                        
                                 <h1 className='font-bold bg-white text-center text-black text-xl rounded'>Frameworks</h1>
                                 <div className='flex w-full items-center justify-between mt-2'>
                                     <div className='flex w-max'>
@@ -114,7 +112,7 @@ export default function About() {
                         <div className='xl:flex items-center justify-center w-full'>
                       
                             {/* Databases */}
-                            <div className='xl:flex flex-col xl:w-72 md:m-6 m-2 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
+                            <div className='xl:flex flex-col xl:w-72 md:m-6 m-10 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
                                 <h1 className='font-bold bg-white text-center text-black text-xl  rounded'>Databases</h1>
                                 <div className='flex w-full items-center justify-between mt-2'>
                                     <div className='flex w-max'>
@@ -133,7 +131,7 @@ export default function About() {
                             </div>
 
                             {/* Tools */}
-                            <div className='xl:flex flex-col xl:w-1/2 md:m-6 m-2 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
+                            <div className='xl:flex flex-col xl:w-1/2 md:m-6 m-10 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
                                 <h1 className='font-bold bg-white text-center text-black text-xl  rounded'>Tools</h1>
                                 <div className='flex w-full items-center justify-between mt-2'>
                                     <div className='flex w-max'>
@@ -155,43 +153,6 @@ export default function About() {
                     </div>
                 </div>
             </div>
-
-            {/* <div className='justify-center'>
-                <div className=" bg-green-900 text-white rounded-md">
-                <h1 className="px-2 text-4xl">News App</h1>
-                <h2 className="px-2 text-4xl">Version 1.0.0</h2>
-                </div>
-                <div className="p-8">
-                    <h1 className="font-semibold italic text-4xl">Description</h1>
-                    <p className="italic text-4xl"><span className="text-green-800">→</span> This is a full-stack application that connects with Firebase and uses an API to allow users to read news articles.</p>
-                    <p className="italic text-4xl"><span className="text-green-800">→</span> Users can view the latest news articles.</p>
-                    <p className="italic text-4xl"><span className="text-green-800">→</span> Users can search for news articles by category.</p>
-                    <p className="italic text-4xl"><span className="text-green-800">→</span> Users can also search for news articles by keyword.</p>                
-                    <p className="italic text-4xl"><span className="text-green-800">→</span> Users can create an account, log in, and log out.</p>
-                    <p className="italic text-4xl"><span className="text-green-800">→</span> Users can save their favorite articles into their account.</p>
-                    <p className="italic text-4xl"><span className="text-green-800">→</span> Users can view their saved articles.</p>
-                    <p className="italic text-4xl"><span className="text-green-800">→</span> Users can delete their saved articles.</p>
-                    <p className="italic text-4xl"><span className="text-green-800">→</span> Users can also view their profile and change their password.</p>
-                    
-                    
-                </div>
-                
-                
-                <footer className=" text-bold text-6xl">About the Developer</footer>
-                <p className="text-bold text-4xl">Created by: Batsuren (Basu) Damdinsuren</p>
-                <p className="text-bold text-4xl">Software Developer</p>
-                <p className="text-bold text-4xl">School of Advanced Digital Technology of Southern Alberta Institute of Technology </p>
-                <p className="text-bold text-4xl">Calgary, Alberta, Canada</p>
-                <p className="text-bold text-4xl">Email:
-                    <a href="batsurenb30@gmail.com">Batsuren Damdinsuren</a>
-                </p>
-                <p className="text-bold text-4xl">LinkedIn:
-                    <a href="https://www.linkedin.com/in/batsuren-d-94837222a/">Batsuren Damdinsuren</a>
-                </p>
-                <p className="text-bold text-4xl">GitHub:
-                    <a href="https://github.com/Basu30 ">Basu30</a>
-                </p>
-            </div> */}
           </div> 
         </main>
     );
