@@ -37,11 +37,11 @@ const Home = () => {
 
         {/* Intro */}      
         <div className='w-full xl:pt-32 xl:pr-20'>
-          <h2 className='md:text-[3rem] font-bold'>Hey, I'm Basu <br/><span className="justify-center xl:text-[2rem] text-center">Software Developer | Full Stack Developer</span></h2>
+          <h2 className='md:text-[3rem] font-bold'>Hey, I&apos;m Basu <br/><span className="justify-center xl:text-[2rem] text-center">Software Developer | Full Stack Developer</span></h2>
           <p className='rounded italic xl:text-xl md:pt-4 w-full text-x'>
-            I'm a Full Stack Developer, passionate and dedicated to my work. 
+            I&apos;m a Full Stack Developer, passionate and dedicated to my work. 
             With a solid foundation in IT support and a deep-seated enthusiasm for technology and coding, 
-            I possess the skills and knowledge necessary to ensure your project's success.
+            I possess the skills and knowledge necessary to ensure your project&apos;s success.
           </p>
 
           {/* Buttons */}
