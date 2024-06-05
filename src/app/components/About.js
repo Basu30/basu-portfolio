@@ -82,7 +82,7 @@ export default function About() {
                                         <li className='xl:mb-2'>  HTML5/CSS  <br/>                                                                                  
                                             <FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span>
                                         </li >                                     
-                                        <li className='mb-2'>SQLPlus/PL/SQL  <br/>
+                                        <li className='mb-2'>SQLPlus/PL/  <br/>
                                             <FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Intermediate</span>
                                         </li>                                                                                        
                                     </ul>
