@@ -72,17 +72,17 @@ export default function About() {
                                         <li className='xl:mb-2'>Js / Ts <br/>                                           
                                             <FontAwesomeIcon icon={faClipboardCheck} className='text-green-500'/> <span className='text-xs'>Advanced</span>
                                         </li>
-                                        <li className='xl:mb-2'> Python/Java/C# <br/>                                                                               
+                                        <li className='xl:mb-2'>Python/Java/C#<br/>                                                                               
                                             <FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Beginner</span>
                                         </li>                                    
                                     </ul>
                                     </div>
                                     <div className='flex w-max'>
                                     <ul className='w-max p-1 px-5'>                                    
-                                        <li className='xl:mb-2'>  HTML5/CSS  <br/>                                                                                  
+                                        <li className='xl:mb-2'>HTML5/CSS<br/>                                                                                  
                                             <FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span>
                                         </li >                                     
-                                        <li className='mb-2'>SQLPlus/PL/  <br/>
+                                        <li className='mb-2'>SQLPlus/PL/SQL<br/>
                                             <FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Intermediate</span>
                                         </li>                                                                                        
                                     </ul>
