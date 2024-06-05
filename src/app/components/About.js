@@ -64,7 +64,7 @@ export default function About() {
                           <div className='xl:flex items-center justify-center md:m-2'>
 
                             {/* Programming Languages */}
-                            <div className='xl:flex flex-col md:m-6 m-10 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
+                            <div className='xl:flex flex-col md:m-6 m-8 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
                                 <h1 className='font-bold bg-white text-center text-black md:text-xl rounded'>Languages</h1>
                                 <div className='flex w-full items-center justify-between mt-2'>
                                     <div className='md:flex w-max'>
@@ -91,7 +91,7 @@ export default function About() {
                             </div>
 
                             {/* Frameworks */}
-                            <div className='xl:flex flex-col md:m-6 m-10 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>                        
+                            <div className='xl:flex flex-col md:m-6 m-8 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>                        
                                 <h1 className='font-bold bg-white text-center text-black text-xl rounded'>Frameworks</h1>
                                 <div className='flex w-full items-center justify-between mt-2'>
                                     <div className='flex w-max'>
@@ -112,7 +112,7 @@ export default function About() {
                         <div className='xl:flex items-center justify-center w-full'>
                       
                             {/* Databases */}
-                            <div className='xl:flex flex-col xl:w-72 md:m-6 m-10 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
+                            <div className='xl:flex flex-col xl:w-72 md:m-6 m-8 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
                                 <h1 className='font-bold bg-white text-center text-black text-xl  rounded'>Databases</h1>
                                 <div className='flex w-full items-center justify-between mt-2'>
                                     <div className='flex w-max'>
@@ -131,7 +131,7 @@ export default function About() {
                             </div>
 
                             {/* Tools */}
-                            <div className='xl:flex flex-col xl:w-1/2 md:m-6 m-10 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
+                            <div className='xl:flex flex-col xl:w-1/2 md:m-6 m-8 border-2 shadow-custom rounded-lg bg-gray-900 text-white hover:scale-105 transform transition-all duration-150 ease-in-out shadow-custom-bottom'>
                                 <h1 className='font-bold bg-white text-center text-black text-xl  rounded'>Tools</h1>
                                 <div className='flex w-full items-center justify-between mt-2'>
                                     <div className='flex w-max'>
@@ -142,7 +142,7 @@ export default function About() {
                                     </div>
                                     <div className='flex w-max'>
                                     <ul className='flex flex-col p-2 px-5'>
-                                        <li className='mb-2 '>Visual Studio Code <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
+                                        <li className='mb-2'>Visual Studio Code <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
                                         <li className='mb-2'>Eclipse <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
                                     </ul>
                                     </div>
