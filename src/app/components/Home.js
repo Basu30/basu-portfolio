@@ -6,6 +6,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link'; 
+import Image from 'next/image';
 import Navbar from './Navbar';
 
 
@@ -36,9 +37,10 @@ const Home = () => {
       <div className="xl:flex w-full rounded-xl xl:mr-8 "> 
 
         {/* Intro */}      
-        <div className='w-full xl:pt-32 xl:pr-20'>
-          <h2 className='md:text-[3rem] font-bold'>Hey, I am Basu<br/><span className="justify-center xl:text-[2rem] text-center">Software Developer | Full Stack Developer</span></h2>
-          <p className='rounded italic xl:text-xl md:pt-4 w-full text-x'>
+        <div className='w-full 2xl:pt-32  xl:pr-20'>
+          <h2 className='md:text-[3rem] sm:text-xl text-xs font-bold xl:pb-10 md:pb-6'>Hey, I am Basu </h2>
+          <p className="md:text-[2rem] text-xs pb-6">Software Developer</p>
+          <p className='rounded italic md:pt-4 w-full xl:text-xl md:text-sm text-xs'>
             I am a Full Stack Developer, passionate and dedicated to my work. 
               With a solid foundation in IT support and a deep-seated enthusiasm for technology and coding, 
               I possess the skills and knowledge necessary to ensure your project&apos;s success.
@@ -61,17 +63,23 @@ const Home = () => {
           {/* </div> */}
 
            {/* Contacts  */}
-          <div className="flex xl:pt-36 ">        
-            <p className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'><Link href='callTo:587-973-0508'><FontAwesomeIcon icon={faPhone} className='text-2xl text-green-500'/> </Link></p>
-            <p className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'><Link href="mailto:Batsurenb30@gmail.com"><FontAwesomeIcon icon={faEnvelope} className='text-2xl text-blue-300'/> </Link></p>
-            <p className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'><Link href="https://www.linkedin.com/in/batsuren-d-94837222a/"><FontAwesomeIcon icon={faLinkedin} className='text-2xl bg-white rounded text-blue-600'/></Link></p> 
-            <p className='items-center italic p-2 m-2 pb-1 hover:scale-125 transform transition-all duration-150 ease-in-out'><Link href="https://github.com/Basu30"><FontAwesomeIcon icon={faGithub} className='text-2xl'/> </Link></p>
+          <div className="flex xl:justify-start justify-center 2xl:pt-36 md:pt-10">        
+            <p className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'><Link href='callTo:587-973-0508'><FontAwesomeIcon icon={faPhone} className='text-3xl text-green-500'/> </Link></p>
+            <p className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'><Link href="mailto:Batsurenb30@gmail.com"><FontAwesomeIcon icon={faEnvelope} className='text-3xl text-blue-300'/> </Link></p>
+            <p className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'><Link href="https://www.linkedin.com/in/batsuren-d-94837222a/"><FontAwesomeIcon icon={faLinkedin} className='text-3xl bg-white rounded text-blue-600'/></Link></p> 
+            <p className='items-center italic p-2 m-2 pb-1 hover:scale-125 transform transition-all duration-150 ease-in-out'><Link href="https://github.com/Basu30"><FontAwesomeIcon icon={faGithub} className='text-3xl'/> </Link></p>
           </div>       
         </div> 
 
          {/* Image  */}
         <div className='xl:w-[60rem] '>
-          <img src='/image/BD3.jpg' alt='Basu' className='rounded-xl xl:p-14 shadow-custom-main scale-100'/>  
+          {/* <img src='/image/BD3.jpg' alt='Basu' className='rounded-xl xl:p-14 shadow-custom-main scale-100'/>   */}
+          <Image 
+            src='/image/BD3.jpg' 
+            alt='Basu'
+            width={500}
+            height={300} 
+            className='rounded-xl xl:p-14 shadow-custom-main w-full' />
         </div>                 
       </div> 
       </div>    

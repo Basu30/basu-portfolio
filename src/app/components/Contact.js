@@ -10,6 +10,7 @@ import { FaLink } from "react-icons/fa";
 import { BiArrowBack } from "react-icons/bi";
 import { BsLinkedin } from "react-icons/bs";
 import Navbar from './Navbar';
+import Image from 'next/image';
 
 
 
@@ -84,7 +85,13 @@ export default function Contact() {
                 
                 {/* Contact */}
                 <div className="xl:flex flex-col rounded-xl bg-gray-300">
-                    <img src='/image/BD.jpg' alt='Basu' className='xl:w-96 rounded-xl scale-90' />
+                    <Image  
+                        src='/image/BD.jpg' 
+                        alt='Basu'
+                        width={500}
+                        height={300}  
+                        className='xl:w-96 rounded-xl scale-90' 
+                    />     
                     <p className='italic p-2 m-2 pb-1 hover:scale-105 transform transition-all duration-150 ease-in-out truncate'><a href='callto:587-973-0508'><FontAwesomeIcon icon={faPhone} className='text-3xl text-green-500'/> +1 (587) 973-0508</a></p>
                     <p className='italic p-2 m-2 pb-1 hover:scale-105 transform transition-all duration-150 ease-in-out truncate'><a href="mailto:Batsurenb30@gmail.com"><FontAwesomeIcon icon={faEnvelope} className='text-3xl text-blue-300'/> Batsurenb30@gmail.com</a></p>
                     <p className='italic p-2 m-2 pb-1 hover:scale-105 transform transition-all duration-150 ease-in-out truncate'><a href="https://www.linkedin.com/in/batsuren-d-94837222a/"><FontAwesomeIcon icon={faLinkedin} className='text-3xl bg-white rounded text-blue-600'/> Batsuren.D</a></p>

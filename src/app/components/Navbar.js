@@ -64,9 +64,9 @@ export default function Navbar() {
 
     return (
         <main>                    
-                <nav className='flex w-full bg-gray-800 text-white md:text-2xl p-4 justify-end shadow-custom-bottom'>                  
-                    <ul className='flex items-center truncate w-full'>             
-                        <li className=''><a href='/'>Batsuren Damdinsuren</a></li>
+                <nav className='flex w-full bg-gray-800 text-white md:text-2xl md:p-4 justify-end shadow-custom-bottom'>                  
+                    <ul className='flex items-center truncate w-full pl-4'>             
+                        <li className='truncate'><a href='/'>Batsuren Damdinsuren</a></li>
                     </ul> 
                     <Box sx={{display:{xs:'none', md:'flex'}, alignItems:'center'}}>              
                         <ul className='md:flex'>

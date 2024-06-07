@@ -5,7 +5,8 @@ import { faClipboardCheck } from '@fortawesome/free-solid-svg-icons';
 import { FaLink } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link'; 
+import Link from 'next/link';
+import Image from 'next/image'; 
 import Navbar from './Navbar';
 
 
@@ -21,7 +22,12 @@ export default function About() {
                 {/* Image and 2 borders */}
                 <div className="flex w-full items-center rounded-full">
                     <div className="flex items-center top-10 justify-center rounded-r-3xl bg-gray-800 border-2 h-[2rem] w-full"></div>                   
-                        <img src="/image/BD.jpg" alt="Basu" className="rounded-full h-40 w-40"/>                 
+                        <Image 
+                            src="/image/BD.jpg" 
+                            alt="Basu"
+                            width={500}
+                            height={300} 
+                            className="rounded-full h-40 w-40" />                 
                     <div className="flex items-end justify-center rounded-l-3xl bg-gray-800 border-2 h-[2rem] w-full"></div>
                 </div>
 
@@ -50,7 +56,7 @@ export default function About() {
                        
                         {/* Buttons for My Projects */}
                         <div className='w-full p-2'>
-                            <button className='bg-green-800 rounded-full xl:w-[6rem] xl:h-[6rem] border-2 border-green-500 p-3 xl:p-2 text-white hover:bg-green-70 hover:scale-105 transform transition-all duration-150 ease-in-out sm:mx-[2rem] shadow-custom-main'>
+                            <button className='bg-green-800 rounded-full xl:w-[6rem] xl:h-[6rem] border-2 border-green-500 p-3 xl:p-2 text-white xl:text-sm text-xs hover:bg-green-70 hover:scale-105 transform transition-all duration-150 ease-in-out sm:mx-[2rem] shadow-custom-main'>
                                 <Link href='/pages/project'>My Projects</Link></button>
                         </div>
                         
@@ -68,7 +74,7 @@ export default function About() {
                                 <h1 className='font-bold bg-white text-center text-black md:text-xl rounded'>Languages</h1>
                                 <div className='flex w-full items-center justify-between mt-2'>
                                     <div className='flex w-max'>
-                                    <ul className='w-max p-1 sm:px-5'>
+                                    <ul className='w-max p-1 sm:px-5 text-xs'>
                                         <li className='mb-2'>Js / Ts <br/>                                           
                                             <FontAwesomeIcon icon={faClipboardCheck} className='text-green-500'/> <span className='text-xs'>Advanced</span>
                                         </li>
@@ -78,7 +84,7 @@ export default function About() {
                                     </ul>
                                     </div>
                                     <div className='flex w-max'>
-                                    <ul className='w-max p-1 sm:px-5'>                                    
+                                    <ul className='w-max p-1 sm:px-5 text-xs'>                                    
                                         <li className='mb-2'>HTML5/CSS<br/>                                                                                  
                                             <FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span>
                                         </li >                                     
@@ -95,13 +101,13 @@ export default function About() {
                                 <h1 className='font-bold bg-white text-center text-black text-xl rounded'>Frameworks</h1>
                                 <div className='flex w-full items-center justify-between mt-2'>
                                     <div className='flex w-max'>
-                                    <ul className='flex flex-col p-2 sm:px-5'>
+                                    <ul className='flex flex-col p-2 sm:px-5 text-xs'>
                                         <li className='mb-2'>React.js <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
                                         <li className='mb-2'>Node.js <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Intermediate</span></li>
                                     </ul>
                                     </div>
                                     <div className='flex w-max'>
-                                    <ul className='flex flex-col p-2 sm:px-5'>
+                                    <ul className='flex flex-col p-2 sm:px-5 text-xs'>
                                         <li className='mb-2'>React Native <br/><FontAwesomeIcon icon={faClipboardCheck} className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
                                         <li className='mb-2'>Express.js <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Intermediate</span></li>
                                     </ul>
@@ -116,13 +122,13 @@ export default function About() {
                                 <h1 className='font-bold bg-white text-center text-black text-xl  rounded'>Databases</h1>
                                 <div className='flex w-full items-center justify-between mt-2'>
                                     <div className='flex w-max'>
-                                        <ul className='flex flex-col p-2 sm:px-5'>
+                                        <ul className='flex flex-col p-2 sm:px-5 text-xs'>
                                             <li className='mb-2'>MySQL  <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500 '/> <span className='text-xs'>Intermediate</span></li>
                                             <li className='mb-2'>Oracle  <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Intermediate</span></li>
                                         </ul>
                                     </div>
                                     <div className='flex w-max'>
-                                        <ul className='flex flex-col p-2 sm:px-5'>
+                                        <ul className='flex flex-col p-2 sm:px-5 text-xs'>
                                             <li className='mb-2'>MongoDB  <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Intermediate</span></li>
                                             <li className='mb-2'>Firebase  <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
                                         </ul>
@@ -135,13 +141,13 @@ export default function About() {
                                 <h1 className='font-bold bg-white text-center text-black text-xl  rounded'>Tools</h1>
                                 <div className='flex w-full items-center justify-between mt-2'>
                                     <div className='flex w-max'>
-                                    <ul className='flex flex-col p-2 sm:px-5'>
+                                    <ul className='flex flex-col p-2 sm:px-5 text-xs'>
                                         <li className='mb-2'>Git <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span> </li>
                                         <li className='mb-2'>GitHub <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
                                     </ul>
                                     </div>
                                     <div className='flex w-max'>
-                                    <ul className='flex flex-col p-2 sm:px-5'>
+                                    <ul className='flex flex-col p-2 sm:px-5 text-xs'>
                                         <li className='mb-2'>Visual Studio Code <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
                                         <li className='mb-2'>Eclipse <br/><FontAwesomeIcon icon={faClipboardCheck}  className='text-green-500'/> <span className='text-xs'>Advanced</span></li>
                                     </ul>
