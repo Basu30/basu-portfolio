@@ -123,7 +123,7 @@ export default function Project() {
               
               <h2 className='hidden sm:block p-1 xl:pt-4 xl:mb-6 text-white font-bold rounded-full text-xs xl:text-4xl md:text-xl sm:text-lg border-b-2 border-white'>Project</h2>
               
-              <a href="https://sswd-capstone-app.vercel.app/">             
+              <a href="https://project-basunews.vercel.app/">             
                 <div className='xl:flex flex-col  bg-white items-center justify-center rounded-full xl:h-44 xl:w-44'>
                   <div className='flex italic font-normal items-center justify-center text-black text-sm xl:text-2xl xl:mt-1 py-6 px-3 hover:text-blue-500 hover:scale-105 transform transition-all duration-150 ease-in-out truncate'>BasuNews</div><br />
                 </div>

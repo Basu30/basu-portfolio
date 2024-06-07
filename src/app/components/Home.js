@@ -73,7 +73,6 @@ const Home = () => {
 
          {/* Image  */}
         <div className='xl:w-[60rem] '>
-          {/* <img src='/image/BD3.jpg' alt='Basu' className='rounded-xl xl:p-14 shadow-custom-main scale-100'/>   */}
           <Image 
             src='/image/BD3.jpg' 
             alt='Basu'
