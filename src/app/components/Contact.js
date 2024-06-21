@@ -65,7 +65,8 @@ export default function Contact() {
             } else {
                 alert('Message failed to send');
                 console.log(response)
-            }
+            } 
+            // setFormData("")
         }
         catch (error) {
             console.error(error);
@@ -78,7 +79,7 @@ export default function Contact() {
         <main id='contact' className='min-h-screen'>
             <Navbar />
             <div className='xl:px-24 py-14 bg-gray-30'>
-            <h1 className='md:text-6xl font-bold text-center italic xl:pb-10'>Contact Me</h1>
+            <h1 className='md:text-6xl text-3xl font-bold text-center italic xl:pb-10'>Contact Me</h1>
             <div className='xl:flex w-full p-2 items-center justify-center'>
                 <div className='xl:flex border-2 border-black rounded-xl bg-gray-800'>
 

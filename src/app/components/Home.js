@@ -37,10 +37,10 @@ const Home = () => {
       <div className="xl:flex w-full rounded-xl xl:mr-8 "> 
 
         {/* Intro */}      
-        <div className='w-full 2xl:pt-32  xl:pr-20'>
-          <h2 className='md:text-[3rem] sm:text-xl text-xs font-bold xl:pb-10 md:pb-6'>Hey, I am Basu </h2>
-          <p className="md:text-[2rem] text-xs pb-6">Software Developer</p>
-          <p className='rounded italic md:pt-4 w-full xl:text-xl md:text-sm text-xs'>
+        <div className='w-full 2xl:pt-32 xl:pr-20'>
+          <h2 className='md:text-[3rem] sm:text-xl text-lg font-bold xl:pb-10 md:pb-6'>Hey, I am Basu </h2>
+          <p className="md:text-[2rem] text-md pb-6">Software Developer</p>
+          <p className='rounded italic md:pt-4 w-full xl:text-xl md:text-lg text-md'>
             I am a Full Stack Developer, passionate and dedicated to my work. 
               With a solid foundation in IT support and a deep-seated enthusiasm for technology and coding, 
               I possess the skills and knowledge necessary to ensure your project&apos;s success.
@@ -48,15 +48,15 @@ const Home = () => {
 
           {/* Buttons */}
           {/* <div className='xl:flex w-full items-center justify-center border-2 border-black'> */}
-            <div className='flex w-full justify-center md:my-8'>
+            <div className='flex w-full justify-center md:my-8 mt-4'>
               <div className='flex px-8 w-max'>
               <button 
-                className='rounded-lg xl:p-3 p-2 xl:px-4 px-1 truncate xl:text-x text-white bg-gray-800 hover:bg-gray-600 hover:scale-125 transform transition-all duration-150 ease-in-out mx-[rem]'>
+                className='rounded-lg xl:p-3 p-1 xl:px-4 px-1 truncate xl:text-xl text-white bg-gray-800 hover:bg-gray-600 hover:scale-125 transform transition-all duration-150 ease-in-out'>
                 <Link href='/pages/about'>About me</Link></button>
                 </div>
                 <div  className='flex w-max px-8'>
               <button 
-                className='bg-blue-800 hover:bg-blue-500 xl:p-3 p-2 xl:px-4 px-1 xl:text-x mx-[rem] rounded-lg text-white hover:scale-125 transform transition-all duration-150 ease-in-out' 
+                className='bg-blue-800 hover:bg-blue-500 xl:p-3 p-1 xl:px-4 px-1 xl:text-xl rounded-lg text-white hover:scale-125 transform transition-all duration-150 ease-in-out' 
                 onClick={handleDownload} >Resume</button>
                 </div>
             </div> 
@@ -74,6 +74,7 @@ const Home = () => {
          {/* Image  */}
         <div className='xl:w-[60rem] '>
           <Image 
+            title='Basu'
             src='/image/BD3.jpg' 
             alt='Basu'
             width={500}
