@@ -64,10 +64,20 @@ export default function Navbar() {
 
     return (
         <main>                    
-                <nav className='flex w-full bg-gray-800 text-white md:text-2xl md:p-4 justify-end shadow-custom-bottom'>                  
-                    <ul className='flex items-center truncate w-full pl-4'>             
-                        <li className='truncate'><a href='/'>Batsuren Damdinsuren</a></li>
-                    </ul> 
+                <nav className='flex w-full bg-gray-800 text-white md:text-3xl md:p-4 justify-end shadow-custom-bottom'>   
+                  
+                        <ul className='flex items-center truncate w-full pl-4'>
+                        {/* <Box sx={{display:{xs:'none', xl:'flex'}}}>                     */}
+                            <li title='Main Page' className='truncate xl:text-3xl text-xl'><a href='/'>Batsuren Damdinsuren</a></li>
+                        {/* </Box>       */}
+                        </ul>
+
+                        {/* <ul className='flex items-center truncate w-full pl-4'>
+                        <Box sx={{display:{xl:'none', md:'flex'}}}>                    
+                            <li title='Main Page' className='text-3xl'><a href='/'>Basu</a></li>
+                        </Box>      
+                        </ul> */}
+                     
                     <Box sx={{display:{xs:'none', md:'flex'}, alignItems:'center'}}>              
                         <ul className='md:flex'>
                             <li className='pr-4 hover:text-blue-300 hover:scale-105 transform transition-all duration-150 ease-in-out'>
