@@ -64,10 +64,31 @@ const Home = () => {
 
            {/* Contacts  */}
           <div className="flex xl:justify-start justify-center 2xl:pt-36 md:pt-10">        
-            <p className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'><Link href='callTo:587-973-0508'><FontAwesomeIcon icon={faPhone} className='text-3xl text-green-500'/> </Link></p>
-            <p className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'><Link href="mailto:Batsurenb30@gmail.com"><FontAwesomeIcon icon={faEnvelope} className='text-3xl text-blue-300'/> </Link></p>
-            <p className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'><Link href="https://www.linkedin.com/in/batsuren-d-94837222a/"><FontAwesomeIcon icon={faLinkedin} className='text-3xl bg-white rounded text-blue-600'/></Link></p> 
-            <p className='items-center italic p-2 m-2 pb-1 hover:scale-125 transform transition-all duration-150 ease-in-out'><Link href="https://github.com/Basu30"><FontAwesomeIcon icon={faGithub} className='text-3xl'/> </Link></p>
+            <p 
+              title='587-973-0508' 
+              className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'>
+              <Link href='callTo:587-973-0508'>
+                <FontAwesomeIcon icon={faPhone} className='text-3xl text-green-500'/> 
+              </Link>
+            </p>
+            <p 
+              title='Batsurenb30@gmail.com' 
+              className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'>
+                <Link href="mailto:Batsurenb30@gmail.com">
+                  <FontAwesomeIcon icon={faEnvelope} className='text-3xl text-blue-300'/> 
+                </Link>
+              </p>
+            <p 
+              className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'>
+              <Link href="https://www.linkedin.com/in/batsuren-d-94837222a/">
+                <FontAwesomeIcon icon={faLinkedin} className='text-3xl bg-white rounded text-blue-600'/>
+              </Link>
+            </p> 
+            <p 
+              className='items-center italic p-2 m-2 pb-1 hover:scale-125 transform transition-all duration-150 ease-in-out'>
+              <Link href="https://github.com/Basu30">
+                <FontAwesomeIcon icon={faGithub} className='text-3xl'/> 
+              </Link></p>
           </div>       
         </div> 
 
