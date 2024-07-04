@@ -63,8 +63,9 @@ export default function About() {
                     </div>
                               
                     {/* Skills */}
-                    <div className="xl:flex flex-col xl:mx-8 border-4 rounded-xl shadow-custom-main">         
-                        <h1 className='font-bold sm:text-xl italic pt-6'>Skills:</h1>
+                    <div className="xl:flex flex-col xl:mx-8 border-4 rounded-xl shadow-custom-main">
+                        <h1 className='font-bold sm:text-xl italic pt-6 pl-4'>Skills:</h1>      
+                        
                         <div className='xl:flex w-full flex-col items-center justify-between'>  
 
                           <div className='xl:flex items-center justify-center md:m-2'>
