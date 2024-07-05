@@ -11,7 +11,7 @@ import Navbar from './Navbar';
 
 
 const handleDownload = () => {
-  const fileUrl = 'https://drive.google.com/file/d/1CxEC5F50DtladoAkFEcJCXo33kvp3pqk/view?usp=sharing';
+  const fileUrl = 'https://drive.google.com/file/d/14P7JqnGQa22sWLWcCz27D493f09LGyEJ/view?usp=sharing';
 
   // Create a temporary anchor element
   const anchorElement = document.createElement('a');
