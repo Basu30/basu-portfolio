@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -11,11 +11,13 @@ import { BiArrowBack } from "react-icons/bi";
 import { BsLinkedin } from "react-icons/bs";
 import Navbar from './Navbar';
 import Image from 'next/image';
+import emailjs from '@emailjs/browser';
 
 
 
 
 export default function Contact() {
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -24,6 +26,7 @@ export default function Contact() {
 
     const [status, setStatus] = useState('');
 
+    // Change the value 
     const handleChange = (e) =>{
         const {name, value} = e.target;
         setFormData({
@@ -33,44 +36,34 @@ export default function Contact() {
     };
 
 
+    // Email sending function 
+    useEffect(() => {
+        emailjs.init("TTneCFS9mLStBu8of")
+    }, [])
+
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Validate
-        if(!formData.name || !formData.email || !formData.message) {
+        if (!formData.name || !formData.email || !formData.message) {
             alert('All fields are required');
             return;
         }
-        
-        // Send form data to the server
+
         try {
-            
-            const response = await fetch('/api/sendEmail', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
-                
-            });
-            console.log(response);
-          
-            if(response.ok) {
-                alert('Message sent successfully!');
-                setFormData({
-                    name: '',
-                    email: '',
-                    message: ''
-                });
-            } else {
-                alert('Message failed to send');
-                console.log(response)
-            } 
-            // setFormData("")
-        }
-        catch (error) {
-            console.error(error);
-            alert('Message failed to send');
+            const templateParams = {
+                from_name: formData.name,
+                from_email: formData.email,
+                message: formData.message,
+            };
+
+            await emailjs.send('service_n0k9eut', 'template_9ayfc9q', templateParams);
+
+            setStatus('Message sent successfully!');
+            setFormData({ name: '', email: '', message: '' });
+        } catch (error) {
+            console.error('Error sending email:', error);
+            setStatus('Message failed to send');
         }
     };
 
@@ -101,7 +94,7 @@ export default function Contact() {
                 {/* Message */}
                 <div className='xl:w-max xl:p-16 bg-gray-500 rounded-xl p-2 xl:m-14 shadow-custom-main'>
                     <form className='flex flex-col w-full' onSubmit={handleSubmit}>
-                        <label htmlFor="name" className='text-white'>Full Name:</label>
+                        <label htmlFor="name" className='text-white'>Name:</label>
                         <input type="text" id="name" name="name" value={formData.name}  onChange={handleChange}  className='rounded-lg xl:p-2 m-2 '/>
                         <label htmlFor="email" className='text-white'>Email:</label>
                         <input type="email" id="email" name="email" value={formData.email}  onChange={handleChange}  className='rounded-lg xl:p-2 m-2'/>
@@ -111,7 +104,7 @@ export default function Contact() {
                             <button type="submit" className='bg-blue-800 hover:bg-blue-500 xl:p-3 xl:px-4 xl:mx-[4rem] xl:w-[6rem] px-2 rounded-lg text-white hover:scale-105 transform transition-all duration-150 ease-in-out'>Send</button>
                         </div>
                     </form> 
-                    {status && <p>{status}</p>}  
+                    {status && <p className='text-center text-white mt-4'>{status}</p>}  
                     </div>                           
                 </div>
             </div>
