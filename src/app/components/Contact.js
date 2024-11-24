@@ -72,7 +72,7 @@ export default function Contact() {
         <main id='contact' className='min-h-screen'>
             <Navbar />
             <div className='xl:px-24 py-14 bg-gray-30'>
-            <h1 className='md:text-6xl text-3xl font-bold text-center italic xl:pb-10'>Contact Me</h1>
+            <h1 className='md:text-6xl text-3xl font-bold text-center italic xl:pb-10 mb-6'>Contact Me</h1>
             <div className='xl:flex w-full p-2 items-center justify-center'>
                 <div className='xl:flex border-2 border-black rounded-xl bg-gray-800 p-1'>
 
@@ -84,7 +84,7 @@ export default function Contact() {
                         alt='Basu'
                         width={500}
                         height={300}  
-                        className='xl:w-full rounded-xl scale-90' 
+                        className='xl:w-96 rounded-xl scale-90' 
                     />     
                     <p className='italic p-2 ml-3 pb-2 hover:scale-105 transform transition-all duration-150 ease-in-out truncate'><a href='callto:587-973-0508'><FontAwesomeIcon icon={faPhone} className='text-3xl text-green-500'/> +1 (587) 973-0508</a></p>
                     <p className='italic p-2 ml-3 pb-2 hover:scale-105 transform transition-all duration-150 ease-in-out truncate'><a href="mailto:Batsurenb30@gmail.com"><FontAwesomeIcon icon={faEnvelope} className='text-3xl text-blue-300'/> Batsurenb30@gmail.com</a></p>
@@ -99,7 +99,7 @@ export default function Contact() {
                         <label htmlFor="email" className='text-white xl:mt-2'>Email:</label>
                         <input type="email" id="email" name="email" value={formData.email}  onChange={handleChange}  className='rounded-lg xl:p-2 p-2 m-2'  placeholder='Please put your email here'/>
                         <label htmlFor="message" className='text-white mt-4'>Message:</label>
-                        <textarea type='message' id='message' name='message' value={formData.message}  onChange={handleChange}  className='resize rounded-lg xl:p-8 p-8 m-2 xl:w-96 text-black'></textarea>
+                        <textarea type='message' id='message' name='message' value={formData.message}  onChange={handleChange}  className='resize rounded-lg xl:p-4 p-3 m-2 xl:w-96 text-black' placeholder='I would greatly appreciate your valuable advice, a job offer, or constructive criticism regarding any shortcomings I may have. Whether I receive a new job offer or not, all of this would be immensely helpful in enhancing my proficiency.'></textarea>
                         <div className='flex items-center justify-center w-full xl:mt-6'>
                             <button type="submit" className='bg-blue-800 hover:bg-blue-500 xl:p-3 p-2 xl:px-4 px-4 xl:mx-[4rem] xl:w-[6rem] rounded-lg text-white hover:scale-105 transform transition-all duration-150 ease-in-out'>Send</button>
                         </div>
