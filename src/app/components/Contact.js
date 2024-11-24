@@ -98,7 +98,7 @@ export default function Contact() {
                         <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className='rounded-lg xl:p-2 p-2 m-2 ' placeholder='Please type your name here'/>
                         <label htmlFor="email" className='text-white xl:mt-2'>Email:</label>
                         <input type="email" id="email" name="email" value={formData.email}  onChange={handleChange} className='rounded-lg xl:p-2 p-2 m-2'  placeholder='Please put your email here'/>
-                        <label htmlFor="message" className='text-white mt-4'>Message:</label>
+                        <label htmlFor="message" className='text-white mt-2'>Message:</label>
                         <textarea type='message' id='message' name='message' value={formData.message} onChange={handleChange}   className='resize  rounded-lg xl:p-4 p-3 m-2 xl:w-96 h-48 text-black' placeholder='I would greatly appreciate your valuable advice, a job offer, or constructive criticism regarding any shortcomings I may have. Whether I receive a new job offer or not, all of this would be immensely helpful in enhancing my proficiency.'></textarea>
                         <div className='flex items-center justify-center w-full xl:mt-6'>
                             <button type="submit" className='bg-blue-800 hover:bg-blue-500 xl:p-3 p-2 xl:px-4 px-4 xl:mx-[4rem] xl:w-[6rem] rounded-lg text-white hover:scale-105 transform transition-all duration-150 ease-in-out'>Send</button>
