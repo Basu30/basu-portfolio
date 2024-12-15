@@ -35,21 +35,23 @@ export default function About() {
                 <div className='xl:flex w-full items-center justify-center'>
 
                     {/* About me */}
-                    <div className='xl:flex flex-col w-full text-center xl:px-10'> 
+                    <div className='xl:flex flex-col w-full text-left xl:px-6'> 
 
                         <div className='text-center'>
-                            <h1 className='xl:mb-5 font-extrabold md:text-6xl'>About Me</h1>  
+                            <h1 className='xl:mb-3 font-bold md:text-5xl'>About Me</h1>  
                         </div>
                             {/* Typing */}
                             <div className='xl:flex flex-col xl:w-full pb-4 p-2 items-center'>  
                                
                                 {/* <div className='flex    border-2 border-black items-center'> */}
                                 <p className="rounded italic md:text-2xl xl:px-2 text-xs">
-                                    My journey started with early experiences in IT support, 
-                                    which sparked my passion for technology and coding. 
-                                    Recently, I completed a Software Developer program at SAIT and 
-                                    am now excited to apply my technical skills in the dynamic world of software development. 
-                                    This path reflects my dedication to continuous learning and my eagerness to contribute to exciting technological advancements.
+                                  My journey into technology began in IT Engineering in Mongolia, where I developed a strong foundation in systems management and troubleshooting. 
+                                  During this time, I gained experience setting up on-premises file-sharing systems and explored early cloud-based backup solutions, 
+                                  adapting to the evolving tech landscape. In 2015, I moved to Canada, where I faced the challenge of learning English while supporting my family. 
+                                  Despite the obstacles, I remained focused on my goal of entering the IT industry. I dedicated my winters to studying English and worked through the other seasons to make ends meet. 
+                                  After completing my English course at level 8, I pursued my passion by enrolling in the Software Developer program at SAIT, 
+                                  graduating in 2024. Now, with a solid foundation in full-stack development, cloud platforms, and a commitment to continuous learning, 
+                                  I’m ready to contribute to impactful projects in the ever-evolving world of software development.
                                 </p>
                                 {/* </div> */}
                             </div>

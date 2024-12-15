@@ -34,16 +34,17 @@ const Home = () => {
     <section id="home" className='min-h-screen'> 
     <Navbar />
     <div className='xl:p-24 xl:px-40 xl:pr-72 p-8'>
-      <div className="xl:flex w-full rounded-xl xl:mr-8"> 
+      <div className="xl:flex w-full rounded-xl xl:mr-8">
 
         {/* Intro */}      
-        <div className='w-full 2xl:pt-32 xl:pr-20'>
+        <div className='w-full 2xl:pt-20 xl:pr-20'>
           <h2 className='md:text-[3rem] sm:text-xl text-lg font-bold xl:pb-10 md:pb-6'>Hey, I am Basu </h2>
           <p className="md:text-[2rem] text-md pb-6">Software Developer</p>
           <p className='rounded italic md:pt-4 w-full xl:text-xl md:text-lg text-md'>
-            I am aspiring a Full Stack Developer, passionate and dedicated to my work. 
-              With a solid foundation in IT support and a deep-seated enthusiasm for technology and coding, 
-              I possess the skills and knowledge necessary to ensure your project&apos;s success.
+            I’m a Software Developer with a diploma from SAIT and a background in IT systems management. 
+            Skilled in JavaScript, Node.js, React.js, and Firebase, and cloud platforms like AWS and Microsoft Azure, I bring a strong technical foundation to every project. 
+            <br/> My IT support experience has sharpened my problem-solving skills, allowing me to tackle challenges efficiently. 
+            I’m passionate about technology and committed to delivering reliable, scalable solutions.
           </p>
 
           {/* Buttons */}
