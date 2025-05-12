@@ -45,13 +45,10 @@ export default function About() {
                                
                                 {/* <div className='flex    border-2 border-black items-center'> */}
                                 <p className="rounded italic md:text-2xl xl:px-2 text-xs">
-                                  My journey into technology began in IT Engineering in Mongolia, where I developed a strong foundation in systems management and troubleshooting. 
-                                  During this time, I gained experience setting up on-premises file-sharing systems and explored early cloud-based backup solutions, 
-                                  adapting to the evolving tech landscape. In 2015, I moved to Canada, where I faced the challenge of learning English while supporting my family. 
-                                  Despite the obstacles, I remained focused on my goal of entering the IT industry. I dedicated my winters to studying English and worked through the other seasons to make ends meet. 
-                                  After completing my English course at level 8, I pursued my passion by enrolling in the Software Developer program at SAIT, 
-                                  graduating in 2024. Now, with a solid foundation in full-stack development, cloud platforms, and a commitment to continuous learning, 
-                                  I’m ready to contribute to impactful projects in the ever-evolving world of software development.
+                                My journey into technology began in Mongolia, where I studied IT Engineering and gained hands-on experience in systems management and troubleshooting. 
+                                I worked on setting up local file-sharing systems and explored early cloud-based backup solutions—skills that helped me adapt quickly to evolving technologies.
+                                In 2015, I moved to Canada and faced the challenge of learning English while supporting my family. I spent winters studying and summers working, determined to stay on the path toward a career in tech. After completing my English program, I enrolled in the Software Development diploma program at SAIT and graduated in 2024.
+                                Now, with a solid foundation in full-stack development, cloud tools like AWS, and test automation, I’m excited to contribute to meaningful software projects. I believe in continuous learning, clean code, and building solutions that make a difference.
                                 </p>
                                 {/* </div> */}
                             </div>

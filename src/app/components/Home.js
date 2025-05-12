@@ -11,7 +11,7 @@ import Navbar from './Navbar';
 
 
 const handleDownload = () => {
-  const fileUrl = 'https://drive.google.com/file/d/1-9GCatGsbzdUYi3goYTaN4A0rfP6IZEs/view?usp=sharing';
+  const fileUrl = 'https://drive.google.com/file/d/1-9A771nUUw1LI6oYaYi89hy8eeIDIGFd/view?usp=sharing';
 
   // Create a temporary anchor element
   const anchorElement = document.createElement('a');
@@ -41,10 +41,10 @@ const Home = () => {
           <h2 className='md:text-[3rem] sm:text-xl text-lg font-bold xl:pb-10 md:pb-6'>Hey, I am Basu </h2>
           <p className="md:text-[2rem] text-md pb-6">Software Developer</p>
           <p className='rounded italic md:pt-4 w-full xl:text-xl md:text-lg text-md'>
-            I’m a Software Developer with a diploma from SAIT and a background in IT systems management. 
-            Skilled in JavaScript, Node.js, React.js, and Firebase, and cloud platforms like AWS and Microsoft Azure, I bring a strong technical foundation to every project. 
-            <br/> My IT support experience has sharpened my problem-solving skills, allowing me to tackle challenges efficiently. 
-            I’m passionate about technology and committed to delivering reliable, scalable solutions.
+            I specialize in JavaScript, React.js, Node.js, and full-stack development. 
+            My background in IT systems management has strengthened my problem-solving mindset, which I now apply to developing real-world applications and automation workflows.
+            I've worked on platforms where admins manage content like news and courses, and users interact through posts—similar to internal tools used by companies. I also bring hands-on experience with Playwright for test automation, PostgreSQL, MongoDB, Firebase, and AWS.
+            I’m continuously learning and always excited to contribute to meaningful, scalable software projects.
           </p>
 
           {/* Buttons */}

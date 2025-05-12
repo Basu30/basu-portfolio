@@ -106,13 +106,13 @@ export default function Project() {
           <div className='flex justify-center m-2 '>
             <div className="flex flex-col items-center justify-center border-2 bg-gray-800 rounded-full text-white p-2 2xl:w-[30rem] 2xl:h-[30rem] xl:w-[25rem] xl:h-[25rem] lg:w-[20rem] lg:h-[20rem] md:w-[15rem] md:h-[15rem] shadow-custom hover:scale-105 transform transition-all duration-150 ease-in-out">
               <h2 className='hidden sm:block p-1 xl:pt-4 xl:mb-6 text-white font-bold rounded-full text-xs xl:text-4xl md:text-xl sm:text-lg border-b-2 border-white'>Project</h2>
-              <a href="#">
+              <a href="https://gandan-frontend.vercel.app">
                 <div className='xl:flex flex-col xl:p-6 bg-white items-center justify-center rounded-full xl:h-44 xl:w-44'>
-                  <div className='flex italic font-normal items-center justify-center text-black text-sm xl:text-2xl xl:mt-1 py-3 px-2 hover:text-blue-500 hover:scale-105 transform transition-all duration-150 ease-in-out'>B2M <br />MusePlayer</div><br />
+                  <div className='flex italic font-normal items-center justify-center text-black text-sm xl:text-2xl xl:mt-1 py-3 px-2 hover:text-blue-500 hover:scale-105 transform transition-all duration-150 ease-in-out'>WorkNet News & Social Platform</div><br />
                 </div>
               </a>
               <div className='xl:m-1 p-4 hidden sm:block'>
-                <p className='2xl:p-4 hidden md:block text-xs xl:text-xl md:text-xs'>React Native Mobile Application for a Music Playing.</p>
+                <p className='2xl:p-4 hidden md:block text-xs xl:text-xl md:text-xs'>Type: Full-Stack Web App. <br/>Tech: React, Node.js, MongoDB, PostgreSQL, Express, JWT</p>
               </div>
             </div>
           </div>
