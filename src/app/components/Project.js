@@ -77,7 +77,7 @@ import Navbar from './Navbar';
 
 export default function Project() {
   return (
-    <main id='project' className='min-h-screen'>
+    <main id='project' className='min-h-screen text-black'>
       <Navbar />
       <div className='md:p-24 p-8'> 
       {/* w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 xl:w-48 xl:h-48 */}

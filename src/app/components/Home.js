@@ -31,9 +31,9 @@ const handleDownload = () => {
 
 const Home = () => {
   return (
-    <section id="home" className='min-h-screen'> 
+    <section id="home" className='min-h-screen text-black'> 
     <Navbar />
-    <div className='xl:p-24 xl:px-40 xl:pr-72 p-8'>
+    <div className='xl:p-24 xl:px-40 xl:pr-72 p-8 '>
       <div className="xl:flex w-full rounded-xl xl:mr-8">
 
         {/* Intro */}      

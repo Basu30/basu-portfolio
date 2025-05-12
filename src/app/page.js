@@ -4,7 +4,7 @@ import Home from './components/Home';
 
 export default function App() {
   return (
-    <main>
+    <main className='bg-white'>
       <Home />    
     </main>
   );

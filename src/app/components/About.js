@@ -13,7 +13,7 @@ import Navbar from './Navbar';
 
 export default function About() {
     return (
-        <main id='about' className="min-h-screen w-screen">
+        <main id='about' className="min-h-screen w-screen text-black">
         <Navbar /> 
         <div className='w-full xl:p-24 p-2'> 
             <div className="w-full items-center">
