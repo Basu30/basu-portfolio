@@ -41,10 +41,10 @@ const Home = () => {
           <h2 className='md:text-[3rem] sm:text-xl text-lg font-bold xl:pb-10 md:pb-6'>Hey, I am Basu </h2>
           <p className="md:text-[2rem] text-md pb-6">Software Developer</p>
           <p className='rounded italic md:pt-4 w-full xl:text-xl md:text-lg text-md'>
-            I specialize in JavaScript, React.js, Node.js, and full-stack development.
-            My background in IT systems management has strengthened my problem-solving mindset, which I now apply to developing real-world applications and automation workflows.
-            I've worked on platforms where admins manage content like news and courses, and users interact through posts—similar to internal tools used by companies. I also bring hands-on experience with Playwright for test automation, PostgreSQL, MongoDB, Firebase, and AWS.
-            I’m continuously learning and always excited to contribute to meaningful, scalable software projects.
+          {
+            "I specialize in JavaScript, React.js, Node.js, and full-stack development.My background in IT systems management has strengthened my problem-solving mindset, which I now apply to developing real-world applications and automation workflows.I've worked on platforms where admins manage content like news and courses, and users interact through posts—similar to internal tools used by companies. I also bring hands-on experience with Playwright for test automation, PostgreSQL, MongoDB, Firebase, and AWS.I’m continuously learning and always excited to contribute to meaningful, scalable software projects."
+          }
+            
           </p>
 
           {/* Buttons */}
