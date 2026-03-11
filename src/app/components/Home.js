@@ -131,7 +131,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.12),transparent_55%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.14),transparent_22%),linear-gradient(180deg,#020617_0%,#0f172a_45%,#111827_100%)] text-white">
-      <div className="pointer-events-none absolute inset-0">
+      <div className="pointer-events-none absolute inset-12.5">
         <div className="absolute left-[-8rem] top-[-6rem] h-80 w-80 rounded-full bg-cyan-400/15 blur-3xl" />
         <div className="absolute right-[-6rem] top-20 h-96 w-96 rounded-full bg-fuchsia-500/10 blur-3xl" />
         <div className="absolute bottom-[-8rem] left-1/3 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl" />
