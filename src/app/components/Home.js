@@ -1,115 +1,26 @@
 'use client';
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
+
 import Image from 'next/image';
-import Navbar from './Navbar';
 
+// const handleDownload = () => {
+//   const fileUrl = 'https://drive.google.com/file/d/1ZYtLTrQDMOaeEjVlm3yFB1JtBTlPhDoM/view?usp=sharing';
 
-const handleDownload = () => {
-  const fileUrl = 'https://drive.google.com/file/d/1ZYtLTrQDMOaeEjVlm3yFB1JtBTlPhDoM/view?usp=sharing';
+//   // Create a temporary anchor element
+//   const anchorElement = document.createElement('a');
+//   anchorElement.href = fileUrl;
+//   anchorElement.download = 'downloaded-file.pdf'; // Specify the filename
+//   anchorElement.style.display = 'none';
 
-  // Create a temporary anchor element
-  const anchorElement = document.createElement('a');
-  anchorElement.href = fileUrl;
-  anchorElement.download = 'downloaded-file.pdf'; // Specify the filename
-  anchorElement.style.display = 'none';
+//   // Append the anchor element to the body
+//   document.body.appendChild(anchorElement);
 
-  // Append the anchor element to the body
-  document.body.appendChild(anchorElement);
+//   // Trigger a click event on the anchor element
+//   anchorElement.click();
 
-  // Trigger a click event on the anchor element
-  anchorElement.click();
-
-  // Remove the anchor element from the body
-  document.body.removeChild(anchorElement);
-};
-
-// const Home = () => {
-//   return (
-//     <section id="home" className='min-h-screen text-black'>
-//       <Navbar />
-//       <div className='xl:p-24 xl:px-40 xl:pr-72 p-8 '>
-//         <div className="xl:flex w-full rounded-xl xl:mr-8">
-
-//           {/* Intro */}
-//           <div className='w-full 2xl:pt-20 xl:pr-20'>
-//             <h2 className='md:text-[3rem] sm:text-xl text-lg font-bold xl:pb-10 md:pb-6'>Hey, I am Basu </h2>
-//             <p className="md:text-[2rem] text-md pb-6">Software Developer</p>
-//             <p className='rounded italic md:pt-4 w-full xl:text-xl md:text-lg text-md'>
-//               {
-//                 "I specialize in JavaScript, React.js, Node.js, and full-stack development.My background in IT systems management has strengthened my problem-solving mindset, which I now apply to developing real-world applications and automation workflows.I've worked on platforms where admins manage content like news and courses, and users interact through posts—similar to internal tools used by companies. I also bring hands-on experience with Playwright for test automation, PostgreSQL, MongoDB, Firebase, and AWS.I’m continuously learning and always excited to contribute to meaningful, scalable software projects."
-//               }
-
-//             </p>
-
-//             {/* Buttons */}
-//             {/* <div className='xl:flex w-full items-center justify-center border-2 border-black'> */}
-//             <div className='flex w-full justify-center md:my-8 mt-4'>
-//               <div className='flex px-8 w-max'>
-//                 <button
-//                   className='rounded-lg xl:p-3 p-1 xl:px-4 px-1 truncate xl:text-xl text-white bg-gray-800 hover:bg-gray-600 hover:scale-125 transform transition-all duration-150 ease-in-out'>
-//                   <Link href='/pages/about'>About me</Link></button>
-//               </div>
-//               <div className='flex w-max px-8'>
-//                 <button
-//                   className='bg-blue-800 hover:bg-blue-500 xl:p-3 p-1 xl:px-4 px-1 xl:text-xl rounded-lg text-white hover:scale-125 transform transition-all duration-150 ease-in-out'
-//                   onClick={handleDownload} >Resume</button>
-//               </div>
-//             </div>
-//             {/* </div> */}
-
-//             {/* Contacts  */}
-//             <div className="flex xl:justify-start justify-center 2xl:pt-36 md:pt-10">
-//               <p
-//                 title='587-973-0508'
-//                 className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'>
-//                 <Link href='callTo:587-973-0508'>
-//                   <FontAwesomeIcon icon={faPhone} className='text-3xl text-green-500' />
-//                 </Link>
-//               </p>
-//               <p
-//                 title='Batsurenb30@gmail.com'
-//                 className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'>
-//                 <Link href="mailto:Batsurenb30@gmail.com">
-//                   <FontAwesomeIcon icon={faEnvelope} className='text-3xl text-blue-300' />
-//                 </Link>
-//               </p>
-//               <p
-//                 className='items-center italic p-2 m-2 pb-1 hover:text-blue-300 hover:scale-125 transform transition-all duration-150 ease-in-out'>
-//                 <Link href="https://www.linkedin.com/in/batsuren-d-94837222a/">
-//                   <FontAwesomeIcon icon={faLinkedin} className='text-3xl bg-white rounded text-blue-600' />
-//                 </Link>
-//               </p>
-//               <p
-//                 className='items-center italic p-2 m-2 pb-1 hover:scale-125 transform transition-all duration-150 ease-in-out'>
-//                 <Link href="https://github.com/Basu30">
-//                   <FontAwesomeIcon icon={faGithub} className='text-3xl' />
-//                 </Link></p>
-//             </div>
-//           </div>
-
-//           {/* Image  */}
-//           <div className='xl:w-[60rem] '>
-//             <Image
-//               title='Basu'
-//               src='/image/BD3.jpg'
-//               alt='Basu'
-//               width={500}
-//               height={300}
-//               className='rounded-xl xl:p-14 shadow-custom-main w-full' />
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
+//   // Remove the anchor element from the body
+//   document.body.removeChild(anchorElement);
 // };
 
-// export default Home;
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Mail, Sparkles, Code2, Layers3, Rocket } from 'lucide-react';
@@ -123,7 +34,12 @@ export default function Home() {
       stack: 'React Native · Node.js · WebSocket · MongoDB',
       repo: 'https://github.com/Basu30/guess-the-song',
       demo: "/demo/guessSong.mp4",
-      screenShot: "/screenShots/guessTheSong.png"
+      screenShots: [
+        "/screenShots/guessTheSong.png", 
+        "/screenShots/GuessTheSong-1.png", 
+        "/screenShots/GuessTheSong-3.png", 
+        "/screenShots/GuessTheSong-2.png",  
+      ]
     },
     {
       title: "BasuNews",
@@ -131,7 +47,10 @@ export default function Home() {
       desc: "React web application that fetches and displays news articles using the NewsAPI service.",
       stack: "React · REST API",
       repo: 'https://github.com/Basu30/project-news',
-      demo: "https://project-basunews.vercel.app/"
+      demo: "https://project-basunews.vercel.app/",
+      screenShots: [
+        "/screenShots/basuNews.png", 
+      ]
     },
     {
       title: 'WorkNet Platform',
@@ -139,7 +58,10 @@ export default function Home() {
       desc: "Full-stack company platform where organizations publish news, announcements, and posts while employees interact through likes and content sharing.",
       stack: 'React · Node.js · PostgreSQL · REST API',
       repo: "https://github.com/Basu30/worknet-frontend",
-      demo: "https://worknet-frontend.vercel.app/"
+      demo: "https://worknet-frontend.vercel.app/",
+      screenShots: [
+        "/screenShots/workNet.png"
+      ]
     },
     {
       title: 'University CMS',
@@ -147,7 +69,10 @@ export default function Home() {
       desc: "Multilingual university website with an admin content management system for managing pages, news, and structured content.",
       stack: 'Next.js · Node.js · PostgreSQL · Tailwind',
       repo: 'https://github.com/Basu30/MBUniversity',
-      demo: "https://zbum-frontend.vercel.app/"
+      demo: "https://zbum-frontend.vercel.app/",
+      screenShots: [
+        "/screenShots/ZBUM.png"
+      ]
     },
     
     {
@@ -156,7 +81,10 @@ export default function Home() {
       desc: "Role-based quoting and ordering web application developed as a capstone project for Southern Shade Windows and Doors.",
       stack: "React · Node.js · MongoDB",
       repo: "https://github.com/Basu30/quoting-app",
-      demo: "https://quoting-app-ten.vercel.app/"
+      demo: "https://quoting-app-ten.vercel.app/",
+      screenShots: [
+        "/screenShots/capstone.png"
+      ]
     },
   ];
 
@@ -345,19 +273,19 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <div className="mb-4 flex h-32 items-end rounded-[1.4rem] border border-white/5 bg-gradient-to-br from-cyan-500/10 via-slate-900 to-fuchsia-500/10 p-4">
-                      <div className="grid w-full grid-cols-3 gap-2 opacity-80">
-                        <div className="h-16 rounded-xl bg-white/10" />
-                        <div className="h-10 rounded-xl bg-white/5" />
-                        <div className="" >
-                        <Image
-                          src={project.screenShot}
-                          alt='screenShot'
-                          width={50}
-                          height={0}
-                          className='object-cover h-20 rounded-xl bg-white/10'
-                        />
-                        </div>
+                    <div className="mb-4 flex h-32 items-en rounded-[1.4rem] border border-white/5 bg-gradient-to-br from-cyan-500/10 via-slate-900 to-fuchsia-500/10 p-4">
+                      <div className='flex flex-row w-full justify-evenly '>
+                
+                        {project.screenShots.map((s, i) => ( 
+                            <Image
+                              key={i}
+                              src={s}
+                              alt={project.title}
+                              width={50}
+                              height={80}
+                              className='object-cover h-24 w-max rounded-lg bg-white/10'
+                          />
+                        ))}
                       </div>
                     </div>
 
@@ -445,20 +373,20 @@ export default function Home() {
               >
                 <div className="relative mb-5 h-52 overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.18),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.16),transparent_35%)]" />
-                  <div className="flex items-center justify-center absolute inset-2 grid grid-cols-3 gap-2 opacity-90">
-                    <div  >
-                    <Image
-                      src={project.screenShot}
-                      alt='screenShot'
-                      width={80}
-                      height={50}
-                      className='object-cover h-auto rounded-2xl bg-white/10 backdrop-blur-sm'
-                    />
-                    </div>
-                    <div className="h-16 rounded-2xl bg-white/5 backdrop-blur-sm" />
-                    <div className="h-20 rounded-2xl bg-white/10 backdrop-blur-sm" />
-                   
-                    
+                  <div className="flex items-center justify-center absolute inset-2 gap-2 opacity-90">
+                    <div className='relative w-full h-40'>
+                      {project.screenShots.slice(0, 4).map((s, i) => ( 
+                        <Image
+                          key={i}
+                          src={s}
+                          alt={project.title}
+                          // width={160}
+                          // height={80}
+                          fill
+                          className='rounded-xl object-contain '
+                        />
+                      ))}
+                    </div>                    
                   </div>
                 </div>
 
