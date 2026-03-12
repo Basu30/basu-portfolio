@@ -33,7 +33,8 @@ export default function Home() {
       desc: 'A multiplayer music game where players join rooms, listen to short clips, and compete in real time with live scoring.',
       stack: 'React Native · Node.js · WebSocket · MongoDB',
       repo: 'https://github.com/Basu30/guess-the-song',
-      demo: "/demo/guessSong.mp4",
+      live: "/demo/guessSong.mp4",
+      demo: "/demo",                 // here will link to download app
       screenShots: [
         "/screenShots/guessTheSong.png", 
         "/screenShots/GuessTheSong-1.png", 
@@ -48,6 +49,7 @@ export default function Home() {
       stack: "React · REST API",
       repo: 'https://github.com/Basu30/project-news',
       demo: "https://project-basunews.vercel.app/",
+      live: "/demo/BasuNews.mp4",
       screenShots: [
         "/screenShots/basuNews.png", 
       ]
@@ -59,6 +61,7 @@ export default function Home() {
       stack: 'React · Node.js · PostgreSQL · REST API',
       repo: "https://github.com/Basu30/worknet-frontend",
       demo: "https://worknet-frontend.vercel.app/",
+      live: "/demo/WorkNet.mp4",
       screenShots: [
         "/screenShots/workNet.png"
       ]
@@ -70,6 +73,7 @@ export default function Home() {
       stack: 'Next.js · Node.js · PostgreSQL · Tailwind',
       repo: 'https://github.com/Basu30/MBUniversity',
       demo: "https://zbum-frontend.vercel.app/",
+      live: "/demo/guessSong.mp4",
       screenShots: [
         "/screenShots/ZBUM.png"
       ]
@@ -82,6 +86,7 @@ export default function Home() {
       stack: "React · Node.js · MongoDB",
       repo: "https://github.com/Basu30/quoting-app",
       demo: "https://quoting-app-ten.vercel.app/",
+      live: "/demo/guessSong.mp4",
       screenShots: [
         "/screenShots/capstone.png"
       ]
@@ -273,20 +278,27 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <div className="mb-4 flex h-32 items-en rounded-[1.4rem] border border-white/5 bg-gradient-to-br from-cyan-500/10 via-slate-900 to-fuchsia-500/10 p-4">
-                      <div className='flex flex-row w-full justify-evenly '>
+                    <div className="relative mb-4 flex h-32 items-en rounded-[0.5rem] border border-white/5 bg-gradient-to-br from-cyan-500/10 via-slate-900 to-fuchsia-500/10 p-">
+                      {/* <div className='flex flex-row w-full justify-evenly '> */}
                 
-                        {project.screenShots.map((s, i) => ( 
-                            <Image
-                              key={i}
-                              src={s}
-                              alt={project.title}
-                              width={50}
-                              height={80}
-                              className='object-cover h-24 w-max rounded-lg bg-white/10'
+                        {/* {project.screenShots.map((s, i) => (  */}
+                          {/* // <Image
+                          //   key={i}
+                          //   src={s}
+                          //   alt={project.title}
+                          //   width={160}
+                          //   height={80}
+                          //   className='object-contain w-full rounded-[0.5rem] '
+                          // /> */}
+                          <video
+                            src={project.live}
+                            autoPlay
+                            controls
+                            width='100%'
+                            className='object-contain rounded-xl'
                           />
-                        ))}
-                      </div>
+                        {/* ))} */}
+                      {/* </div> */}
                     </div>
 
                     <p className="text-sm leading-6 text-white/65">{project.desc}</p>
@@ -371,10 +383,10 @@ export default function Home() {
                 whileHover={{ y: -6 }}
                 className="group rounded-[2rem] border border-white/10 bg-white/[0.06] p-5 shadow-2xl shadow-black/10 backdrop-blur-xl"
               >
-                <div className="relative mb-5 h-52 overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.18),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.16),transparent_35%)]" />
-                  <div className="flex items-center justify-center absolute inset-2 gap-2 opacity-90">
-                    <div className='relative w-full h-40'>
+                <div className="relative mb-5 h-52 overflow-hidden rounded-[0.5rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+                  {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.18),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.16),transparent_35%)]" />
+                  <div className="flex items-center justify-center absolute inset-2 gap-2 opacity-90"> */}
+                    {/* <div className='relative w-full h-40'> */}
                       {project.screenShots.slice(0, 4).map((s, i) => ( 
                         <Image
                           key={i}
@@ -383,11 +395,11 @@ export default function Home() {
                           // width={160}
                           // height={80}
                           fill
-                          className='rounded-xl object-contain '
+                          className='rounded-[0.5rem] object-contain'
                         />
                       ))}
-                    </div>                    
-                  </div>
+                    {/* </div>                     */}
+                  {/* </div> */}
                 </div>
 
                 <div className="mb-3 flex items-center justify-between gap-3">
